@@ -24,6 +24,7 @@ const page = () => {
 
         <Button variant="superOutline">Super Outline</Button>
 
+        <Button variant="ghost">Ghost</Button>
     </div>
   )
 }
