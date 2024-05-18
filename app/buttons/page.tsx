@@ -19,6 +19,11 @@ const page = () => {
 
         <Button variant="dangerOutline">Danger Outline</Button>
 
+
+        <Button variant="super">Super</Button>
+
+        <Button variant="superOutline">Super Outline</Button>
+
     </div>
   )
 }
