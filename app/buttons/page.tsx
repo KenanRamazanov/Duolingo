@@ -9,7 +9,7 @@ const page = () => {
         <Button variant="primary">Primary</Button>
 
 
-        <Button>Primary Outline</Button>
+        <Button variant="primaryOutline">Primary Outline</Button>
 
     </div>
   )
