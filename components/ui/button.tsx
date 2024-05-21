@@ -30,7 +30,8 @@ const buttonVariants = cva(
         ghost:
           "bg-transparent text-slate-500 border-transparent border-0 hover:bg-slate-100",
 
-          sidebar:"bg-transparent text-slate-500 border-2 border-transparent hover:bg-slate-100 transistion:none"
+          sidebar:"bg-transparent text-slate-500 border-2 border-transparent hover:bg-slate-100 transistion:none",
+          sidebarOutline:"bg-sky-500/15 text-sky-500 border-sky-300 border-2 hover:bg-sky-500/20 transistion:none"
       },
       size: {
         default: "h-11 px-4 py-2",
