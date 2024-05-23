@@ -1,8 +1,12 @@
 import React from 'react'
 
-const MarketingLayout = () => {
+type Props = {
+    children: React.ReactNode;
+}
+
+const MarketingLayout = ({children} : Props) => {
   return (
-    <div>MarketingLayout</div>
+    <div>{children}</div>
   )
 }
 
