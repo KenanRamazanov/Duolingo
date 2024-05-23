@@ -6,7 +6,12 @@ type Props = {
 
 const MarketingLayout = ({children} : Props) => {
   return (
-    <div>{children}</div>
+    <div className='min-h-screen flex flex-col '>
+        <main className='flex flex-1 flex-col items-center justify-center'>
+        {children} 
+        </main>
+
+    </div>
   )
 }
 
