@@ -18,13 +18,15 @@ const Header = () => {
         </ClerkLoading>
         <ClerkLoaded>
             <SignedIn>
-             <UserButton/>
+             <UserButton
+             afterSignOutUrl="/"
+             />
             </SignedIn>
             <SignedOut>
                 <SignInButton
                 mode="modal"
-                afterSignInUrl='/learn'
-                afterSignUpUrl="/learn"
+                forceRedirectUrl="/learn"
+                signUpForceRedirectUrl="/learn"
                 >
                     <Button size="lg" variant='ghost'>
                       Login
