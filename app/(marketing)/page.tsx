@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ClerkLoading } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button"; 
+import { ClerkLoaded, ClerkLoading, SignUpButton, SignedIn,SignedOut } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 
@@ -16,6 +16,18 @@ export default function Home() {
       <ClerkLoading>
         <Loader className="h-5 w-5 text-muted-foreground animate-spin"/>
       </ClerkLoading>
+      <ClerkLoaded>
+        <SignedOut>
+          <SignUpButton>
+
+          </SignUpButton>
+        </SignedOut>
+        <SignedIn>
+          <Button size="lg" variant="secondary" className="w-full">
+            Get Started
+          </Button>
+        </SignedIn>
+      </ClerkLoaded>
     </div>
     </div>
   </div>
