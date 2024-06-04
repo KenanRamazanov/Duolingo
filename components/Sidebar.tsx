@@ -2,7 +2,10 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className='bg-blue-500 h-full w-[256px]'>Sidebar</div>
+    <div
+     className='bg-blue-500 h-full w-[256px]'>
+        Sidebar
+    </div>
   )
 }
 
