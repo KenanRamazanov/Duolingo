@@ -1,3 +1,5 @@
+import Sidebar from "@/components/Sidebar";
+
 type Props = {
     children: React.ReactNode;
 };
@@ -5,6 +7,7 @@ type Props = {
 const MainLayout = ({children} : Props) => {
     return (
         <>
+        <Sidebar/>
         <main className="pl-[256px]  h-full">
             <div className="bg-red-500 h-full">
             {children}
