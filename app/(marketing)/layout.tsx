@@ -1,23 +1,21 @@
-import React from 'react'
-import Header from './header';
-import Footer from './footer';
+import React from "react";
+import Header from "./header";
+import Footer from "./footer";
 
 type Props = {
-    children: React.ReactNode;
-}
+  children: React.ReactNode;
+};
 
-const MarketingLayout = ({children} : Props) => {
+const MarketingLayout = ({ children }: Props) => {
   return (
-    <div className='min-h-screen flex flex-col '>
-        <Header/>
-        <main className='flex flex-1 flex-col items-center justify-center'>
+    <div className="min-h-screen flex flex-col ">
+      <Header />
+      <main className="flex flex-1 flex-col items-center justify-center">
         {children}
-        </main>
-        <Footer/> 
-        
-
+      </main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MarketingLayout
+export default MarketingLayout;
