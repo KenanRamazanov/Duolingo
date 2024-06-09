@@ -8,7 +8,7 @@ type Props = {
 const MainLayout = ({ children }: Props) => {
   return (
     <>
-      <Sidebar />
+      <Sidebar className="hidden lg:flex" />
       <main className="pl-[256px]  h-full">
         <div className="bg-red-500 h-full">{children}</div>
       </main>
