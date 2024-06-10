@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 type Props = {
   className?: string;
@@ -6,9 +7,14 @@ type Props = {
 export const Sidebar = ({className}: Props) => {
   return (
     <div className={cn(
-    "flex bg-blue-500 h-full lg:w-[256px] lg:fixed left-0 top-0 px-4  border-r-2 flex-col",className,
+    "flex  h-full lg:w-[256px] lg:fixed left-0 top-0 px-4  border-r-2 flex-col",className,
     )}>
-        Sidebar
+         <div className="pt-8 pl-4 flex items-center gap-x-3 ">
+          <Image src="/mascot.svg" width={40} height={40} alt="Mascot" />
+          <h1 className="text-2xl font-extrabold text-green-600 tracking-wide">
+            Duolingo
+          </h1>
+        </div>
     </div>
   );
 };
