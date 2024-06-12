@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { SidebarItem } from "./sidebar-item";
 
 type Props = {
   className?: string;
@@ -22,7 +23,7 @@ export const Sidebar = ({ className }: Props) => {
         </div>
       </Link>
       <div className="flex flex-col gap-y-2 flex-1">
-
+      <SidebarItem label="Learn`"/>
       </div>
     </div>
   );
