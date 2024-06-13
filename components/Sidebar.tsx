@@ -23,7 +23,7 @@ export const Sidebar = ({ className }: Props) => {
         </div>
       </Link>
       <div className="flex flex-col gap-y-2 flex-1">
-      <SidebarItem label="Learn`"/>
+        <SidebarItem label="Learn" />
       </div>
     </div>
   );

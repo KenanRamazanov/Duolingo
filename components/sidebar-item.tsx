@@ -18,8 +18,11 @@ export const SidebarItem = ({
 }:Props) => {
 
     const pathname = usePathname();
+    const active = pathname === href;
   return (
-    <Button>
+    <Button
+    variant={active ?  "sidebarOutline" : "sidebar" }
+    >
         {label}
     </Button>
   )
