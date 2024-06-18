@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 
 
@@ -18,6 +19,9 @@ export const SidebarItem = ({ label, iconSrc, href }: Props) => {
     <Button variant={active ? "sidebarOutline" : "sidebar"}
     className="justify-start h-[52px]"
     asChild
-    >{label}</Button>
+    >
+      <Link href={href}>
+      {label}
+      </Link></Button>
   );
 };
