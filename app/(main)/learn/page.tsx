@@ -1,4 +1,5 @@
 
+import { FeedWrapper } from '@/components/feed-wrapper'
 import { StickyWrapper } from '@/components/sticky-wrapper'
 import React from 'react'
 
@@ -8,6 +9,9 @@ const LearnPage = () => {
         <StickyWrapper>
           My sticky sidebar
         </StickyWrapper>
+        <FeedWrapper>
+          This is my FeedWWrapper
+        </FeedWrapper>
     </div>
   )
 }
