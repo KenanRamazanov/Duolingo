@@ -2,6 +2,7 @@
 import { FeedWrapper } from '@/components/feed-wrapper'
 import { StickyWrapper } from '@/components/sticky-wrapper'
 import React from 'react'
+import { Header } from './header'
 
 const LearnPage = () => {
   return (
@@ -10,7 +11,7 @@ const LearnPage = () => {
           My sticky sidebar
         </StickyWrapper>
         <FeedWrapper>
-          This is my Feed Wrapper
+       <Header title="Spanish"/>
         </FeedWrapper>
     </div>
   )
