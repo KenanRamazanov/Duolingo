@@ -1,4 +1,5 @@
-import StickyWrapper from '@/components/sticky-wrapper'
+
+import { StickyWrapper } from '@/components/sticky-wrapper'
 import React from 'react'
 
 const LearnPage = () => {
