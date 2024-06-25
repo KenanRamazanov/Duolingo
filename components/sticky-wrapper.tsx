@@ -4,6 +4,7 @@ type Props = {
   children: React.ReactNode;
 };
 
+
 export const StickyWrapper = ({ children }: Props) => {
   return (
     <div className="hidden lg:block w-[368px] sticky self-end bottom-6">
