@@ -13,3 +13,4 @@ export const StickyWrapper = ({ children }: Props) => {
     </div>
   );
 };
+
