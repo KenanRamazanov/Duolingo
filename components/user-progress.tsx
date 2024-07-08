@@ -9,11 +9,16 @@ type Props = {
     points: number;
     hasActiveSubscription: boolean;
 }
-export const UserProgress = ({activeCourse} : Props) => {
+export const UserProgress = ({
+    activeCourse,
+    points,
+    hearts,
+    hasActiveSubscription
+} : Props) => {
   return (
     <div  className='flex items-center justify-between gap-x-2 w-full'>
     <Link href="/courses">
-      <Button>
+      <Button variant="ghost">
        <Image
        src={activeCourse.imageSrc}
        alt={activeCourse.title}
@@ -22,6 +27,12 @@ export const UserProgress = ({activeCourse} : Props) => {
        height={32}
        />
       </Button>
+    </Link>
+    <Link href="/shop">
+    <Button variant="ghost" className='text-orange-500'>
+      <Image src="/points.svg" height={28} width={28} alt="Points" className='mr-2'/>
+      {points}
+    </Button>
     </Link>
     </div>
   )
