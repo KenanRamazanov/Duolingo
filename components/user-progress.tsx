@@ -17,6 +17,9 @@ export const UserProgress = ({activeCourse} : Props) => {
        <Image
        src={activeCourse.imageSrc}
        alt={activeCourse.title}
+       className='rounded-md border'
+       width={32}
+       height={32}
        />
       </Button>
     </Link>
