@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 type Props = {
   title: string;
@@ -6,7 +9,11 @@ type Props = {
 export const Header = ({ title }: Props) => {
   return (
     <div className="sticky top-0 bg-white pb-3 lg:pt-[28px] flex items-center  justify-between] border-b-2 mb-5 text-neutral-400 lg:z-50">
-      {title}
+      <Link href="/courses">
+      <Button>
+         <ArrowLeft className="h-5 w-5 stroke-2 text-neutral-400"/>
+      </Button>
+      </Link>
     </div>
   );
 };
