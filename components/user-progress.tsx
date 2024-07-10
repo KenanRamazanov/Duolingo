@@ -40,6 +40,18 @@ export const UserProgress = ({
           {points}
         </Button>
       </Link>
+      <Link href="/shop">
+        <Button variant="ghost" className="text-rose-500">
+          <Image
+            src="/heart.svg"
+            height={28}
+            width={28}
+            alt="Points"
+            className="mr-2"
+          />
+          {points}
+        </Button>
+      </Link>
     </div>
   );
 };
